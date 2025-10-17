@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolyTools - Ferramentas de Segurança Digital</title>
+    <title>PolyTools - Plataforma Completa de Segurança Digital</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,7 +15,7 @@
             <div class="nav-container">
                 <div class="nav-logo">
                     <i class="fas fa-shield-alt"></i>
-                    <span>PolyTools</span>
+                    <span>PolyTools v9.8.2</span>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
@@ -49,6 +49,20 @@
                 Uma coleção abrangente de utilitários para OSINT, análise de malware, testes de penetração, 
                 segurança de rede e muito mais. Tudo em um só lugar.
             </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">113+</span>
+                    <span class="stat-label">Ferramentas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">19</span>
+                    <span class="stat-label">Categorias</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">Multi</span>
+                    <span class="stat-label">Plataforma</span>
+                </div>
+            </div>
             <div class="hero-buttons">
                 <a href="#tools" class="btn btn-primary">Explorar Ferramentas</a>
                 <a href="#about" class="btn btn-secondary">Saiba Mais</a>
@@ -68,7 +82,7 @@
                     <div class="terminal-line">$ python polytools.py --category osint</div>
                     <div class="terminal-line">[+] Iniciando ferramentas OSINT...</div>
                     <div class="terminal-line">[+] Carregando Sherlock, Holehe, Name-sweep</div>
-                    <div class="terminal-line">[+] 15 ferramentas OSINT disponíveis</div>
+                    <div class="terminal-line">[+] 47 ferramentas OSINT disponíveis</div>
                     <div class="terminal-line blinking">$ _</div>
                 </div>
             </div>
@@ -85,24 +99,24 @@
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">Todas</button>
                 <button class="filter-btn" data-filter="osint">OSINT</button>
-                <button class="filter-btn" data-filter="brute">Brute Force</button>
-                <button class="filter-btn" data-filter="ddos">DDoS</button>
-                <button class="filter-btn" data-filter="dos">DoS</button>
-                <button class="filter-btn" data-filter="dox">Doxing</button>
-                <button class="filter-btn" data-filter="extras">Extras</button>
-                <button class="filter-btn" data-filter="ferramentas">Ferramentas</button>
-                <button class="filter-btn" data-filter="git-exposto">Git Exposto</button>
-                <button class="filter-btn" data-filter="linux">Linux</button>
                 <button class="filter-btn" data-filter="malware">Malware</button>
-                <button class="filter-btn" data-filter="phishing">Phishing</button>
                 <button class="filter-btn" data-filter="scanner">Scanner</button>
-                <button class="filter-btn" data-filter="sites-ataque">Sites Ataque</button>
-                <button class="filter-btn" data-filter="spam">Spam</button>
+                <button class="filter-btn" data-filter="brute">Brute Force</button>
                 <button class="filter-btn" data-filter="sql">SQL Injection</button>
+                <button class="filter-btn" data-filter="span">Spam</button>
+                <button class="filter-btn" data-filter="phishing">Phishing</button>
+                <button class="filter-btn" data-filter="xss">XSS</button>
+                <button class="filter-btn" data-filter="git-exposto">Git Exposto</button>
+                <button class="filter-btn" data-filter="dos">DoS</button>
+                <button class="filter-btn" data-filter="ddos">DDoS</button>
+                <button class="filter-btn" data-filter="dox">Doxing</button>
+                <button class="filter-btn" data-filter="zero-day">Zero Day</button>
                 <button class="filter-btn" data-filter="testes-rede">Testes Rede</button>
+                <button class="filter-btn" data-filter="linux">Linux</button>
                 <button class="filter-btn" data-filter="vpn">VPN</button>
                 <button class="filter-btn" data-filter="wifi">Wi-Fi</button>
-                <button class="filter-btn" data-filter="xss">XSS</button>
+                <button class="filter-btn" data-filter="bluetooth">Bluetooth</button>
+                <button class="filter-btn" data-filter="extras">Extras</button>
             </div>
             
             <!-- Tools Grid -->
@@ -119,16 +133,24 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        O PolyTools é uma plataforma abrangente que reúne diversas ferramentas de segurança digital 
-                        em uma interface unificada e acessível. Desenvolvido para profissionais de segurança, 
-                        pesquisadores e entusiastas, o projeto visa simplificar o acesso a utilitários essenciais 
-                        para diversas áreas da segurança cibernética.
+                        O <strong>PolyTools v9.8.2</strong> é uma plataforma abrangente desenvolvida para profissionais 
+                        de segurança, pesquisadores e entusiastas. Reúne diversas ferramentas de segurança digital 
+                        em uma interface unificada e acessível.
                     </p>
                     <p>
                         Com uma arquitetura modular, o PolyTools permite que você execute ferramentas específicas 
                         para suas necessidades, seja para testes de penetração, análise de malware, investigação 
                         OSINT ou segurança de redes.
                     </p>
+                    <div class="version-info">
+                        <h3>Informações da Versão</h3>
+                        <ul>
+                            <li><strong>Versão:</strong> 9.8.2</li>
+                            <li><strong>Data:</strong> 14/11/2025</li>
+                            <li><strong>Desde:</strong> 10/7/2025</li>
+                            <li><strong>Plataformas:</strong> Windows, Linux, Termux</li>
+                        </ul>
+                    </div>
                     <div class="features">
                         <div class="feature">
                             <i class="fas fa-code"></i>
@@ -154,7 +176,9 @@
                         </div>
                         <div class="code-body">
                             <pre><code class="python">def main():
-    print("PolyTools - Security Toolkit")
+    print("PolyTools - Security Toolkit v9.8.2")
+    print("Data: 14/11/2025 | Desde: 10/7/2025")
+    
     categories = get_categories()
     
     while True:
@@ -194,6 +218,10 @@
                         <i class="fab fa-instagram"></i>
                         <span>Instagram: @PolyTools49</span>
                     </div>
+                    <div class="contact-item">
+                        <i class="fas fa-code"></i>
+                        <span>Versão: 9.8.2</span>
+                    </div>
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
@@ -226,9 +254,12 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <i class="fas fa-shield-alt"></i>
-                    <span>PolyTools</span>
+                    <span>PolyTools v9.8.2</span>
                 </div>
                 <p class="footer-text">Ferramentas de segurança para profissionais e entusiastas</p>
+                <div class="footer-info">
+                    <p><strong>Versão:</strong> 9.8.2 | <strong>Data:</strong> 14/11/2025 | <strong>Desde:</strong> 10/7/2025</p>
+                </div>
                 <div class="footer-social">
                     <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
