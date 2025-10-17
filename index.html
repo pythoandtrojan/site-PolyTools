@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyTools - Ferramentas de Segurança Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>PolyTools</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tools" class="nav-link">Ferramentas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">PolyTools</h1>
+            <p class="hero-subtitle">Sua plataforma completa de ferramentas de segurança digital</p>
+            <p class="hero-description">
+                Uma coleção abrangente de utilitários para OSINT, análise de malware, testes de penetração, 
+                segurança de rede e muito mais. Tudo em um só lugar.
+            </p>
+            <div class="hero-buttons">
+                <a href="#tools" class="btn btn-primary">Explorar Ferramentas</a>
+                <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                    </div>
+                    <div class="terminal-title">polytools@security:~</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">$ python polytools.py --category osint</div>
+                    <div class="terminal-line">[+] Iniciando ferramentas OSINT...</div>
+                    <div class="terminal-line">[+] Carregando Sherlock, Holehe, Name-sweep</div>
+                    <div class="terminal-line">[+] 15 ferramentas OSINT disponíveis</div>
+                    <div class="terminal-line blinking">$ _</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">Ferramentas Disponíveis</h2>
+            <p class="section-subtitle">Filtre por categoria para encontrar a ferramenta ideal para sua necessidade</p>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todas</button>
+                <button class="filter-btn" data-filter="osint">OSINT</button>
+                <button class="filter-btn" data-filter="brute">Brute Force</button>
+                <button class="filter-btn" data-filter="ddos">DDoS</button>
+                <button class="filter-btn" data-filter="dos">DoS</button>
+                <button class="filter-btn" data-filter="dox">Doxing</button>
+                <button class="filter-btn" data-filter="extras">Extras</button>
+                <button class="filter-btn" data-filter="ferramentas">Ferramentas</button>
+                <button class="filter-btn" data-filter="git-exposto">Git Exposto</button>
+                <button class="filter-btn" data-filter="linux">Linux</button>
+                <button class="filter-btn" data-filter="malware">Malware</button>
+                <button class="filter-btn" data-filter="phishing">Phishing</button>
+                <button class="filter-btn" data-filter="scanner">Scanner</button>
+                <button class="filter-btn" data-filter="sites-ataque">Sites Ataque</button>
+                <button class="filter-btn" data-filter="spam">Spam</button>
+                <button class="filter-btn" data-filter="sql">SQL Injection</button>
+                <button class="filter-btn" data-filter="testes-rede">Testes Rede</button>
+                <button class="filter-btn" data-filter="vpn">VPN</button>
+                <button class="filter-btn" data-filter="wifi">Wi-Fi</button>
+                <button class="filter-btn" data-filter="xss">XSS</button>
+            </div>
+            
+            <!-- Tools Grid -->
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Tools will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre o PolyTools</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        O PolyTools é uma plataforma abrangente que reúne diversas ferramentas de segurança digital 
+                        em uma interface unificada e acessível. Desenvolvido para profissionais de segurança, 
+                        pesquisadores e entusiastas, o projeto visa simplificar o acesso a utilitários essenciais 
+                        para diversas áreas da segurança cibernética.
+                    </p>
+                    <p>
+                        Com uma arquitetura modular, o PolyTools permite que você execute ferramentas específicas 
+                        para suas necessidades, seja para testes de penetração, análise de malware, investigação 
+                        OSINT ou segurança de redes.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-code"></i>
+                            <h3>Multiplataforma</h3>
+                            <p>Compatível com Windows, Linux e Termux</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Segurança</h3>
+                            <p>Ferramentas validadas e atualizadas</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-sync-alt"></i>
+                            <h3>Atualizações</h3>
+                            <p>Manutenção constante do repositório</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span>polytools.py</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code class="python">def main():
+    print("PolyTools - Security Toolkit")
+    categories = get_categories()
+    
+    while True:
+        show_menu(categories)
+        choice = get_user_input()
+        
+        if choice == 'exit':
+            break
+            
+        tool = select_tool(choice)
+        if tool:
+            execute_tool(tool)</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Entre em Contato</h3>
+                    <p>Para dúvidas, sugestões ou reportar problemas com as ferramentas.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>erikSlava@proton.me</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <span>Idade: 17 anos</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram: @PolyTools49</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>PolyTools</span>
+                </div>
+                <p class="footer-text">Ferramentas de segurança para profissionais e entusiastas</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2024 PolyTools. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
