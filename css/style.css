@@ -156,6 +156,28 @@ body {
     max-width: 500px;
 }
 
+.hero-stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--gray-color);
+}
+
 .hero-buttons {
     display: flex;
     gap: 15px;
@@ -305,6 +327,7 @@ body {
     cursor: pointer;
     transition: var(--transition);
     font-weight: 500;
+    font-size: 0.9rem;
 }
 
 .filter-btn:hover, .filter-btn.active {
@@ -378,6 +401,31 @@ body {
     margin-bottom: 20px;
     color: var(--gray-color);
     font-size: 1.1rem;
+}
+
+.version-info {
+    background: rgba(30, 41, 59, 0.7);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 30px 0;
+}
+
+.version-info h3 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.version-info ul {
+    list-style: none;
+}
+
+.version-info li {
+    margin-bottom: 8px;
+    color: var(--gray-color);
+}
+
+.version-info strong {
+    color: var(--light-color);
 }
 
 .features {
@@ -535,10 +583,19 @@ body {
 
 .footer-text {
     color: var(--gray-color);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.footer-info {
+    margin-bottom: 30px;
+}
+
+.footer-info p {
+    color: var(--gray-color);
+    font-size: 0.9rem;
 }
 
 .footer-social {
@@ -607,6 +664,10 @@ body {
         font-size: 2.5rem;
     }
 
+    .hero-stats {
+        justify-content: center;
+    }
+
     .hero-buttons {
         justify-content: center;
     }
@@ -622,7 +683,7 @@ body {
 
     .filter-btn {
         padding: 8px 16px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .tools-grid {
@@ -645,6 +706,14 @@ body {
 
     .filter-btn {
         padding: 6px 12px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .hero-stats {
+        gap: 15px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
     }
 }
