@@ -1,718 +1,1042 @@
-// Dados das ferramentas organizadas por categoria
+// Dados completos das ferramentas baseado no seu código Python
 const toolsData = [
-    // OSINT
+    // OSINT - 47 ferramentas
     {
-        name: "Sherlock",
+        name: "BuscaDeSites.py",
+        description: "Busca informações em sites",
+        category: "osint",
+        icon: "fas fa-globe"
+    },
+    {
+        name: "metadados.py",
+        description: "Extrai metadados de arquivos",
+        category: "osint",
+        icon: "fas fa-file-code"
+    },
+    {
+        name: "Leaked-Databases.py",
+        description: "Consulta bancos de dados vazados",
+        category: "osint",
+        icon: "fas fa-database"
+    },
+    {
+        name: "busca-usuario.py",
         description: "Busca por usuários em redes sociais",
         category: "osint",
         icon: "fas fa-user-secret"
     },
     {
-        name: "Holehe",
-        description: "Verifica se email está registrado em serviços",
-        category: "osint",
-        icon: "fas fa-envelope"
-    },
-    {
-        name: "Name-sweep",
-        description: "Busca abrangente por nomes na internet",
-        category: "osint",
-        icon: "fas fa-search"
-    },
-    {
-        name: "BuscaDeSites",
-        description: "Localiza sites relacionados a um alvo",
-        category: "osint",
-        icon: "fas fa-globe"
-    },
-    {
-        name: "FOTO",
-        description: "Análise e busca por imagens",
-        category: "osint",
-        icon: "fas fa-camera"
-    },
-    {
-        name: "IMEI-busca",
-        description: "Rastreamento de dispositivos por IMEI",
-        category: "osint",
-        icon: "fas fa-mobile-alt"
-    },
-    {
-        name: "Leaked-Databases",
-        description: "Busca em bancos de dados vazados",
-        category: "osint",
-        icon: "fas fa-database"
-    },
-    {
-        name: "academico",
-        description: "Busca em ambientes acadêmicos",
-        category: "osint",
-        icon: "fas fa-graduation-cap"
-    },
-    {
-        name: "address_resolver",
-        description: "Resolução e geolocalização de endereços",
-        category: "osint",
-        icon: "fas fa-map-marker-alt"
-    },
-    {
-        name: "api-naval",
-        description: "API para dados navais e marítimos",
-        category: "osint",
-        icon: "fas fa-ship"
-    },
-    {
-        name: "apis-web",
-        description: "Coleção de APIs para OSINT",
-        category: "osint",
-        icon: "fas fa-code"
-    },
-    {
-        name: "bin",
-        description: "Análise de números BIN de cartões",
-        category: "osint",
-        icon: "fas fa-credit-card"
-    },
-    {
-        name: "busca-usuario",
-        description: "Busca avançada por usuários",
-        category: "osint",
-        icon: "fas fa-users"
-    },
-    {
-        name: "buscar-navios",
-        description: "Rastreamento de embarcações",
-        category: "osint",
-        icon: "fas fa-anchor"
-    },
-    {
-        name: "cameras",
-        description: "Localização de câmeras públicas",
-        category: "osint",
-        icon: "fas fa-video"
-    },
-    {
-        name: "cep",
-        description: "Busca por CEP e endereços",
-        category: "osint",
-        icon: "fas fa-map"
-    },
-    {
-        name: "cnpj",
-        description: "Consulta de dados de CNPJ",
-        category: "osint",
-        icon: "fas fa-building"
-    },
-    {
-        name: "cpf",
-        description: "Validação e consulta de CPF",
-        category: "osint",
-        icon: "fas fa-id-card"
-    },
-    {
-        name: "ddd-ddi",
-        description: "Identificação de códigos de área",
-        category: "osint",
-        icon: "fas fa-phone"
-    },
-    {
-        name: "financeiro",
-        description: "Análise de dados financeiros",
-        category: "osint",
-        icon: "fas fa-chart-line"
-    },
-    {
-        name: "gerador",
-        description: "Gerador de dados para testes",
-        category: "osint",
-        icon: "fas fa-cogs"
-    },
-    {
-        name: "gerar-pessoa",
-        description: "Geração de identidades fictícias",
-        category: "osint",
-        icon: "fas fa-user-plus"
-    },
-    {
-        name: "github",
-        description: "OSINT para perfis do GitHub",
-        category: "osint",
-        icon: "fab fa-github"
-    },
-    {
-        name: "gmail-social",
-        description: "Análise de contas Gmail",
+        name: "gmail-social.py",
+        description: "Busca por Gmail em redes sociais",
         category: "osint",
         icon: "fas fa-at"
     },
     {
-        name: "governo-eua",
-        description: "Acesso a dados governamentais",
-        category: "osint",
-        icon: "fas fa-landmark"
-    },
-    {
-        name: "insta-dados",
-        description: "Extração de dados do Instagram",
-        category: "osint",
-        icon: "fab fa-instagram"
-    },
-    {
-        name: "investigaçãoDeG-mail",
-        description: "Investigação avançada de Gmail",
-        category: "osint",
-        icon: "fas fa-envelope-open"
-    },
-    {
-        name: "ip",
-        description: "Geolocalização e análise de IP",
-        category: "osint",
-        icon: "fas fa-network-wired"
-    },
-    {
-        name: "mac",
-        description: "Identificação de dispositivos por MAC",
-        category: "osint",
-        icon: "fas fa-wifi"
-    },
-    {
-        name: "mapa-osint",
-        description: "Visualização de dados OSINT em mapa",
-        category: "osint",
-        icon: "fas fa-map"
-    },
-    {
-        name: "metadados",
-        description: "Extração de metadados de arquivos",
-        category: "osint",
-        icon: "fas fa-file-code"
-    },
-    {
-        name: "news_monitor",
-        description: "Monitoramento de notícias",
-        category: "osint",
-        icon: "fas fa-newspaper"
-    },
-    {
-        name: "nome-social",
-        description: "Busca por nomes em redes sociais",
+        name: "nome-social.py",
+        description: "Busca por nome real em redes sociais",
         category: "osint",
         icon: "fas fa-user-tag"
     },
     {
-        name: "nome",
-        description: "Análise completa de nomes",
+        name: "cep.py",
+        description: "Consulta informações por CEP",
         category: "osint",
-        icon: "fas fa-signature"
+        icon: "fas fa-map-marker-alt"
     },
     {
-        name: "numero-usuario",
-        description: "Rastreamento por número telefônico",
+        name: "cnpj.py",
+        description: "Consulta dados de CNPJ",
         category: "osint",
-        icon: "fas fa-phone-alt"
+        icon: "fas fa-building"
     },
     {
-        name: "osint-web",
-        description: "Ferramentas OSINT web-based",
-        category: "osint",
-        icon: "fas fa-cloud"
-    },
-    {
-        name: "parentes",
-        description: "Mapeamento de relações familiares",
-        category: "osint",
-        icon: "fas fa-users"
-    },
-    {
-        name: "pix",
-        description: "Análise de transações PIX",
-        category: "osint",
-        icon: "fas fa-money-bill-wave"
-    },
-    {
-        name: "placa",
-        description: "Consulta de placas de veículos",
-        category: "osint",
-        icon: "fas fa-car"
-    },
-    {
-        name: "rastreador-bitcoin",
-        description: "Rastreamento de transações Bitcoin",
-        category: "osint",
-        icon: "fab fa-bitcoin"
-    },
-    {
-        name: "reddit",
-        description: "OSINT para Reddit",
-        category: "osint",
-        icon: "fab fa-reddit"
-    },
-    {
-        name: "rg",
-        description: "Validação e análise de RG",
+        name: "cpf.py",
+        description: "Consulta dados de CPF",
         category: "osint",
         icon: "fas fa-id-card"
     },
     {
-        name: "sherlock-api",
-        description: "API para ferramenta Sherlock",
+        name: "insta-dados.py",
+        description: "Coleta dados do Instagram",
         category: "osint",
-        icon: "fas fa-server"
+        icon: "fab fa-instagram"
     },
     {
-        name: "subdomain",
-        description: "Descoberta de subdomínios",
+        name: "investigaçãoDeG-mail.py",
+        description: "Investiga contas de Gmail",
         category: "osint",
-        icon: "fas fa-sitemap"
+        icon: "fas fa-envelope-open"
     },
     {
-        name: "telefone",
-        description: "Análise de números telefônicos",
+        name: "ip.py",
+        description: "Rastreamento de IP",
+        category: "osint",
+        icon: "fas fa-network-wired"
+    },
+    {
+        name: "nome.py",
+        description: "Busca por nomes",
+        category: "osint",
+        icon: "fas fa-signature"
+    },
+    {
+        name: "pais.py",
+        description: "Consulta informações de países",
+        category: "osint",
+        icon: "fas fa-flag"
+    },
+    {
+        name: "rastreador-bitcoin.py",
+        description: "Rastreia transações Bitcoin",
+        category: "osint",
+        icon: "fab fa-bitcoin"
+    },
+    {
+        name: "rg.py",
+        description: "Consulta dados de RG",
+        category: "osint",
+        icon: "fas fa-id-card"
+    },
+    {
+        name: "telefone.py",
+        description: "Busca por números de telefone",
         category: "osint",
         icon: "fas fa-phone"
     },
     {
-        name: "validador",
-        description: "Validação de diversos dados",
+        name: "bin.py",
+        description: "Consulta informações de BIN (cartões)",
+        category: "osint",
+        icon: "fas fa-credit-card"
+    },
+    {
+        name: "placa.py",
+        description: "Consulta informações de placas de veículos",
+        category: "osint",
+        icon: "fas fa-car"
+    },
+    {
+        name: "sherlock.py",
+        description: "Busca por nomes de usuário em redes sociais",
+        category: "osint",
+        icon: "fas fa-search"
+    },
+    {
+        name: "pix.py",
+        description: "Consulta informações de chaves PIX",
+        category: "osint",
+        icon: "fas fa-money-bill-wave"
+    },
+    {
+        name: "gmail-api.py",
+        description: "API que consulta dados vazados de Gmail",
+        category: "osint",
+        icon: "fas fa-server"
+    },
+    {
+        name: "holehe.py",
+        description: "Procura redes sociais vinculado a um Gmail",
+        category: "osint",
+        icon: "fas fa-envelope"
+    },
+    {
+        name: "FOTO.py",
+        description: "Procura metadados de foto",
+        category: "osint",
+        icon: "fas fa-camera"
+    },
+    {
+        name: "whois.py",
+        description: "Busca com WHOIS",
+        category: "osint",
+        icon: "fas fa-info-circle"
+    },
+    {
+        name: "apis-web.py",
+        description: "APIs em página web",
+        category: "osint",
+        icon: "fas fa-cloud"
+    },
+    {
+        name: "numero-usuario.py",
+        description: "Busca redes vinculada a um número",
+        category: "osint",
+        icon: "fas fa-phone-alt"
+    },
+    {
+        name: "IMEI-busca.py",
+        description: "Busca de IMEI",
+        category: "osint",
+        icon: "fas fa-mobile-alt"
+    },
+    {
+        name: "parentes.py",
+        description: "Busca de parentes de uma vítima",
+        category: "osint",
+        icon: "fas fa-users"
+    },
+    {
+        name: "mac.py",
+        description: "Consulta de MAC",
+        category: "osint",
+        icon: "fas fa-wifi"
+    },
+    {
+        name: "verificador-link.py",
+        description: "Verifica se link é seguro",
+        category: "osint",
+        icon: "fas fa-shield-alt"
+    },
+    {
+        name: "camera.py",
+        description: "Olhar câmeras",
+        category: "osint",
+        icon: "fas fa-video"
+    },
+    {
+        name: "github.py",
+        description: "Investigar usuário do GitHub",
+        category: "osint",
+        icon: "fab fa-github"
+    },
+    {
+        name: "mapa-osint.py",
+        description: "Mapa com vários suportes para OSINT",
+        category: "osint",
+        icon: "fas fa-map"
+    },
+    {
+        name: "reddit.py",
+        description: "Detalhes de usuário do Reddit",
+        category: "osint",
+        icon: "fab fa-reddit"
+    },
+    {
+        name: "sherlock-api.py",
+        description: "Sherlock modo API",
+        category: "osint",
+        icon: "fas fa-code"
+    },
+    {
+        name: "geolocalização.py",
+        description: "Olhar minha geolocalização atual",
+        category: "osint",
+        icon: "fas fa-location-arrow"
+    },
+    {
+        name: "subdomain.py",
+        description: "Buscar domínios em sites",
+        category: "osint",
+        icon: "fas fa-sitemap"
+    },
+    {
+        name: "validador.py",
+        description: "Validador de CPF, telefone, IP, email e CEP",
         category: "osint",
         icon: "fas fa-check-circle"
     },
     {
-        name: "virus-total-api",
-        description: "Integração com VirusTotal",
+        name: "ddd-ddi.py",
+        description: "Buscador de DDD/DDI",
+        category: "osint",
+        icon: "fas fa-phone"
+    },
+    {
+        name: "gerador.py",
+        description: "Gerador de CPF, telefone, placa, cartão e IP",
+        category: "osint",
+        icon: "fas fa-cogs"
+    },
+    {
+        name: "gerar-pessoa.py",
+        description: "Gera uma pessoa fake com dados",
+        category: "osint",
+        icon: "fas fa-user-plus"
+    },
+    {
+        name: "name-sweep.py",
+        description: "Faz combinações para achar redes sociais",
+        category: "osint",
+        icon: "fas fa-search-plus"
+    },
+    {
+        name: "virus-total-api.py",
+        description: "Verificar link e APKs",
         category: "osint",
         icon: "fas fa-shield-virus"
     },
     {
-        name: "whois",
-        description: "Consulta WHOIS de domínios",
+        name: "api-naval.py",
+        description: "Olhar localização de navios, porto",
         category: "osint",
-        icon: "fas fa-info-circle"
+        icon: "fas fa-ship"
+    },
+    {
+        name: "governo-eua.py",
+        description: "Dados do governo dos EUA",
+        category: "osint",
+        icon: "fas fa-landmark"
+    },
+    {
+        name: "address_resolver.py",
+        description: "Dados de endereço",
+        category: "osint",
+        icon: "fas fa-home"
+    },
+    {
+        name: "financeiro.py",
+        description: "Dados financeiros de empresas",
+        category: "osint",
+        icon: "fas fa-chart-line"
+    },
+    {
+        name: "academico.py",
+        description: "Buscar dados acadêmicos",
+        category: "osint",
+        icon: "fas fa-graduation-cap"
+    },
+    {
+        name: "news_monitor.py",
+        description: "Jornal nacional",
+        category: "osint",
+        icon: "fas fa-newspaper"
     },
 
-    // Brute Force
+    // Malware - 32 ferramentas
     {
-        name: "Dictionary Attack",
-        description: "Ataque de dicionário personalizado",
-        category: "brute",
-        icon: "fas fa-book"
-    },
-    {
-        name: "Hash Cracker",
-        description: "Quebra de hashes com múltiplos métodos",
-        category: "brute",
-        icon: "fas fa-unlock"
-    },
-    {
-        name: "Hydra",
-        description: "Ferramenta avançada de brute force",
-        category: "brute",
-        icon: "fas fa-shield-alt"
-    },
-    {
-        name: "John The Ripper",
-        description: "Clássico quebrador de senhas",
-        category: "brute",
-        icon: "fas fa-user-lock"
-    },
-    {
-        name: "PIN Attack",
-        description: "Ataque específico para PINs",
-        category: "brute",
-        icon: "fas fa-key"
-    },
-    {
-        name: "Pure Brute",
-        description: "Ataque de força bruta pura",
-        category: "brute",
-        icon: "fas fa-bolt"
-    },
-
-    // DDoS
-    {
-        name: "DDoS Tool",
-        description: "Ferramenta completa para ataques DDoS",
-        category: "ddos",
-        icon: "fas fa-cloud-download-alt"
-    },
-
-    // DoS
-    {
-        name: "DoS Attack",
-        description: "Ataque de negação de serviço",
-        category: "dos",
-        icon: "fas fa-ban"
-    },
-    {
-        name: "DoS Tool",
-        description: "Ferramenta geral para ataques DoS",
-        category: "dos",
-        icon: "fas fa-exclamation-triangle"
-    },
-
-    // Doxing
-    {
-        name: "Dox Discord",
-        description: "Coleta de informações do Discord",
-        category: "dox",
-        icon: "fab fa-discord"
-    },
-    {
-        name: "Dox Tool",
-        description: "Ferramenta geral de doxing",
-        category: "dox",
-        icon: "fas fa-address-card"
-    },
-
-    // Extras
-    {
-        name: "Calculadora",
-        description: "Calculadora para operações diversas",
-        category: "extras",
-        icon: "fas fa-calculator"
-    },
-    {
-        name: "Conversor Moedas",
-        description: "Conversor de moedas em tempo real",
-        category: "extras",
-        icon: "fas fa-money-bill"
-    },
-    {
-        name: "Gerador Senhas",
-        description: "Gerador de senhas seguras",
-        category: "extras",
-        icon: "fas fa-key"
-    },
-    {
-        name: "Organizador",
-        description: "Organização de arquivos e dados",
-        category: "extras",
-        icon: "fas fa-folder"
-    },
-    {
-        name: "Terminal",
-        description: "Terminal personalizado",
-        category: "extras",
-        icon: "fas fa-terminal"
-    },
-
-    // Ferramentas
-    {
-        name: "BrazilWings",
-        description: "Ferramenta específica para o Brasil",
-        category: "ferramentas",
-        icon: "fas fa-globe-americas"
-    },
-    {
-        name: "Deadpool2000",
-        description: "Coleção de utilitários diversos",
-        category: "ferramentas",
-        icon: "fas fa-tools"
-    },
-    {
-        name: "Mr.Holmes",
-        description: "Ferramenta de investigação",
-        category: "ferramentas",
-        icon: "fas fa-search"
-    },
-
-    // Git Exposto
-    {
-        name: "Baixar Git",
-        description: "Download de repositórios Git",
-        category: "git-exposto",
-        icon: "fab fa-git-alt"
-    },
-    {
-        name: "Git Scanner",
-        description: "Scanner para repositórios expostos",
-        category: "git-exposto",
-        icon: "fas fa-code-branch"
-    },
-
-    // Linux
-    {
-        name: "Distro Info",
-        description: "Informações sobre distribuições Linux",
-        category: "linux",
-        icon: "fab fa-linux"
-    },
-
-    // Malware
-    {
-        name: "Beelogger",
-        description: "Criação de keyloggers",
-        category: "malware",
-        icon: "fas fa-keyboard"
-    },
-    {
-        name: "Binary Padding",
-        description: "Técnicas de ofuscação de binários",
-        category: "malware",
-        icon: "fas fa-file-binary"
-    },
-    {
-        name: "CVE Explorer",
-        description: "Busca por vulnerabilidades CVE",
-        category: "malware",
-        icon: "fas fa-bug"
-    },
-    {
-        name: "TheFatRat",
-        description: "Criação de payloads",
-        category: "malware",
-        icon: "fas fa-rat"
-    },
-    {
-        name: "App Inject",
-        description: "Injeção de código em aplicativos",
-        category: "malware",
-        icon: "fas fa-syringe"
-    },
-    {
-        name: "C2 Interactive",
-        description: "Command and Control interativo",
+        name: "c2.py",
+        description: "Servidor de Comando e Controle",
         category: "malware",
         icon: "fas fa-server"
     },
     {
-        name: "C2 Server",
-        description: "Servidor Command and Control",
+        name: "malware.py",
+        description: "Ferramentas de malware",
         category: "malware",
-        icon: "fas fa-network-wired"
+        icon: "fas fa-biohazard"
     },
     {
-        name: "Dropper",
-        description: "Criação de droppers",
+        name: "malware-assembly.py",
+        description: "Malware em Assembly",
+        category: "malware",
+        icon: "fas fa-microchip"
+    },
+    {
+        name: "malware-c.py",
+        description: "Malware em C",
+        category: "malware",
+        icon: "fab fa-cuttlefish"
+    },
+    {
+        name: "malwarePowerShell.py",
+        description: "Malware em PowerShell",
+        category: "malware",
+        icon: "fab fa-microsoft"
+    },
+    {
+        name: "malware.go.py",
+        description: "Malware em Go",
+        category: "malware",
+        icon: "fas fa-code"
+    },
+    {
+        name: "Pos-Exploracao.py",
+        description: "Ferramentas de pós-exploração",
+        category: "malware",
+        icon: "fas fa-tools"
+    },
+    {
+        name: "dropper.py",
+        description: "Dropper para implantação de malware",
         category: "malware",
         icon: "fas fa-download"
     },
     {
-        name: "Listener",
-        description: "Ouvinte para conexões reversas",
+        name: "netcat-c2.py",
+        description: "Netcat como servidor C2",
         category: "malware",
-        icon: "fas fa-headphones"
+        icon: "fas fa-network-wired"
     },
     {
-        name: "Web Shell",
-        description: "Criação de web shells",
+        name: "malware-js.py",
+        description: "Malware feito em JS",
+        category: "malware",
+        icon: "fab fa-js"
+    },
+    {
+        name: "malware-ruby.py",
+        description: "Malware feito em Ruby",
+        category: "malware",
+        icon: "fas fa-gem"
+    },
+    {
+        name: "malware-java.py",
+        description: "Malware feito em Java",
+        category: "malware",
+        icon: "fab fa-java"
+    },
+    {
+        name: "malware-bash.py",
+        description: "Malwares em Bash",
+        category: "malware",
+        icon: "fas fa-terminal"
+    },
+    {
+        name: "malware-discord.py",
+        description: "Malware pra roubo de token Discord",
+        category: "malware",
+        icon: "fab fa-discord"
+    },
+    {
+        name: "malware-troll.py",
+        description: "Não execute isso",
+        category: "malware",
+        icon: "fas fa-skull"
+    },
+    {
+        name: "Binary-Padding.py",
+        description: "Depois eu explico",
+        category: "malware",
+        icon: "fas fa-file-binary"
+    },
+    {
+        name: "c2-interativo.py",
+        description: "C2 com comandos",
+        category: "malware",
+        icon: "fas fa-keyboard"
+    },
+    {
+        name: "compilar.py",
+        description: "Compilar malwares",
+        category: "malware",
+        icon: "fas fa-cogs"
+    },
+    {
+        name: "web-shell.py",
+        description: "C2 com interface web",
         category: "malware",
         icon: "fas fa-spider"
     },
     {
-        name: "Webhook Malware",
-        description: "Malware usando webhooks",
+        name: "win-lin.py",
+        description: "Organizar lista de malwares Linux/Windows",
         category: "malware",
-        icon: "fas fa-link"
-    },
-
-    // Phishing
-    {
-        name: "Clickjacking",
-        description: "Técnicas de clickjacking",
-        category: "phishing",
-        icon: "fas fa-mouse-pointer"
+        icon: "fas fa-list"
     },
     {
-        name: "Phishing APK",
-        description: "Criação de APKs maliciosos",
-        category: "phishing",
+        name: "termux-lista.py",
+        description: "Organizar lista de malwares Termux",
+        category: "malware",
+        icon: "fas fa-mobile"
+    },
+    {
+        name: "malware-Ios.py",
+        description: "Gerador de malwares para IOS",
+        category: "malware",
+        icon: "fab fa-apple"
+    },
+    {
+        name: "malware-Linux.py",
+        description: "Gerador de malware para LINUX",
+        category: "malware",
+        icon: "fab fa-linux"
+    },
+    {
+        name: "malware-macOS.py",
+        description: "Gerador de malware para macOS",
+        category: "malware",
+        icon: "fab fa-apple"
+    },
+    {
+        name: "malware-Windows.py",
+        description: "Gerador de malware para Windows",
+        category: "malware",
+        icon: "fab fa-windows"
+    },
+    {
+        name: "malwares-Android-apk.py",
+        description: "Gerador de malware para Android (APK)",
+        category: "malware",
         icon: "fab fa-android"
     },
     {
-        name: "Phishing Discord",
-        description: "Ataques de phishing no Discord",
-        category: "phishing",
-        icon: "fab fa-discord"
+        name: "termux-payloads.py",
+        description: "Malwares para o Termux",
+        category: "malware",
+        icon: "fas fa-mobile-alt"
     },
     {
-        name: "Phishing Social",
-        description: "Phishing para redes sociais",
-        category: "phishing",
-        icon: "fas fa-share-alt"
+        name: "malware-bot-telegram.py",
+        description: "Malwares + bot do Telegram",
+        category: "malware",
+        icon: "fab fa-telegram"
+    },
+    {
+        name: "install-metasploit-termux.py",
+        description: "Baixar o Metasploit no Termux",
+        category: "malware",
+        icon: "fas fa-download"
+    },
+    {
+        name: "listener.py",
+        description: "Se conectar em um malware",
+        category: "malware",
+        icon: "fas fa-headphones"
+    },
+    {
+        name: "app-inject.py",
+        description: "Injetar malwares em app legítimo",
+        category: "malware",
+        icon: "fas fa-syringe"
+    },
+    {
+        name: "metasploit-web.py",
+        description: "Metasploit com interface web",
+        category: "malware",
+        icon: "fas fa-globe"
+    },
+    {
+        name: "webhook-malware.py",
+        description: "Malwares compilados + webhook",
+        category: "malware",
+        icon: "fas fa-link"
+    },
+    {
+        name: "TheFatRat.py",
+        description: "Ferramenta geradora de malware",
+        category: "malware",
+        icon: "fas fa-rat"
+    },
+    {
+        name: "Beelogger.py",
+        description: "Ferramenta geradora de malware",
+        category: "malware",
+        icon: "fas fa-bug"
+    },
+    {
+        name: "CVE.py",
+        description: "Exploração de vulnerabilidades críticas",
+        category: "malware",
+        icon: "fas fa-exclamation-triangle"
     },
 
-    // Scanner
+    // Scanner - 9 ferramentas
     {
-        name: "Nmap Scripts",
-        description: "Coleção de scripts para Nmap",
+        name: "scanner.py",
+        description: "Ferramenta de varredura de portas",
         category: "scanner",
         icon: "fas fa-search"
     },
     {
-        name: "Nmap",
-        description: "Scanner de rede avançado",
+        name: "nmap.py",
+        description: "Menu pra Nmap",
         category: "scanner",
         icon: "fas fa-network-wired"
     },
     {
-        name: "Scan Geral",
-        description: "Scanner de vulnerabilidades geral",
+        name: "scan-perigo.py",
+        description: "Procura portas vulneráveis como ADB",
+        category: "scanner",
+        icon: "fas fa-exclamation-triangle"
+    },
+    {
+        name: "scan-massa.py",
+        description: "Faz scanners em massa",
+        category: "scanner",
+        icon: "fas fa-broadcast-tower"
+    },
+    {
+        name: "scan-real.py",
+        description: "Scanner real",
         category: "scanner",
         icon: "fas fa-shield-alt"
     },
     {
-        name: "Scanner TV",
-        description: "Scanner para Smart TVs",
+        name: "nmap-script.py",
+        description: "Usa os scripts do Nmap",
+        category: "scanner",
+        icon: "fas fa-code"
+    },
+    {
+        name: "scan-geral.py",
+        description: "Faz scanner em todos os aparelhos de uma rede",
+        category: "scanner",
+        icon: "fas fa-wifi"
+    },
+    {
+        name: "scanner-smart-tv.py",
+        description: "Ataque em Smart TV",
         category: "scanner",
         icon: "fas fa-tv"
     },
-
-    // Sites Ataque
     {
-        name: "Login Site",
-        description: "Ataques a sistemas de login",
-        category: "sites-ataque",
-        icon: "fas fa-sign-in-alt"
+        name: "scanner-tv.py",
+        description: "Descobre a versão da sua TV",
+        category: "scanner",
+        icon: "fas fa-desktop"
     },
     {
-        name: "Site Spam",
-        description: "Ferramentas de spam para sites",
-        category: "sites-ataque",
-        icon: "fas fa-comment-alt"
-    },
-    {
-        name: "SQL Inject Site",
-        description: "Ataques SQL Injection em sites",
-        category: "sites-ataque",
-        icon: "fas fa-database"
-    },
-    {
-        name: "XSS Site",
-        description: "Ataques XSS em sites",
-        category: "sites-ataque",
-        icon: "fas fa-code"
+        name: "upnp-dlna.py",
+        description: "Busca portas vulneráveis de TV smart",
+        category: "scanner",
+        icon: "fas fa-plug"
     },
 
-    // Spam
+    // Brute Force - 7 ferramentas
     {
-        name: "Discord Spam",
-        description: "Ferramenta de spam para Discord",
-        category: "spam",
-        icon: "fab fa-discord"
+        name: "dictionary-attack.py",
+        description: "Ataque de dicionário a senhas",
+        category: "brute",
+        icon: "fas fa-book"
     },
     {
-        name: "Social Spam",
-        description: "Spam em redes sociais",
-        category: "spam",
-        icon: "fas fa-share-alt"
+        name: "hash-cracker.c",
+        description: "Quebrador de hashes em C",
+        category: "brute",
+        icon: "fas fa-unlock"
     },
     {
-        name: "Span Gmail",
-        description: "Spam para contas Gmail",
-        category: "spam",
-        icon: "fas fa-envelope"
+        name: "puro.py",
+        description: "Força bruta pura",
+        category: "brute",
+        icon: "fas fa-bolt"
     },
     {
-        name: "Span SMS",
-        description: "Spam via SMS",
-        category: "spam",
-        icon: "fas fa-sms"
+        name: "sites.py",
+        description: "Força bruta em sites",
+        category: "brute",
+        icon: "fas fa-globe"
+    },
+    {
+        name: "hydra.py",
+        description: "Ferramenta Hydra para força bruta",
+        category: "brute",
+        icon: "fas fa-shield-alt"
+    },
+    {
+        name: "pin.py",
+        description: "Quebrar PIN de celular",
+        category: "brute",
+        icon: "fas fa-key"
+    },
+    {
+        name: "jhon-the-ripper.py",
+        description: "Quebra de hashes",
+        category: "brute",
+        icon: "fas fa-user-lock"
     },
 
-    // SQL Injection
+    // SQL Injection - 3 ferramentas
     {
-        name: "SQL Inject",
-        description: "Ferramenta de injeção SQL",
+        name: "sqlmap.py",
+        description: "Ferramenta automatizada de SQL injection",
         category: "sql",
         icon: "fas fa-database"
     },
     {
-        name: "SQL Scanner",
+        name: "sql-inject.py",
+        description: "Ferramenta manual de SQL injection",
+        category: "sql",
+        icon: "fas fa-code"
+    },
+    {
+        name: "sql-scaner.py",
         description: "Scanner de vulnerabilidades SQL",
         category: "sql",
         icon: "fas fa-search"
     },
+
+    // Spam - 9 ferramentas
     {
-        name: "SQLMap",
-        description: "Ferramenta automática de SQL injection",
-        category: "sql",
-        icon: "fas fa-bolt"
+        name: "fim-link.py",
+        description: "Ferramenta de spam por links",
+        category: "span",
+        icon: "fas fa-link"
+    },
+    {
+        name: "social-span.py",
+        description: "Spam em redes sociais",
+        category: "span",
+        icon: "fas fa-share-alt"
+    },
+    {
+        name: "span-gmail.py",
+        description: "Spam por e-mail (Gmail)",
+        category: "span",
+        icon: "fas fa-envelope"
+    },
+    {
+        name: "span-sms.py",
+        description: "Spam por SMS",
+        category: "span",
+        icon: "fas fa-sms"
+    },
+    {
+        name: "trolar-amigo.py",
+        description: "Ferramenta para trollar amigos",
+        category: "span",
+        icon: "fas fa-laugh"
+    },
+    {
+        name: "git.span-menu.py",
+        description: "Várias ferramentas de spam",
+        category: "span",
+        icon: "fas fa-bomb"
+    },
+    {
+        name: "discord-span.py",
+        description: "Spam de Discord",
+        category: "span",
+        icon: "fab fa-discord"
+    },
+    {
+        name: "mensagem-sms.py",
+        description: "Spam de mensagem de SMS",
+        category: "span",
+        icon: "fas fa-comment-alt"
+    },
+    {
+        name: "bot-span-discord.py",
+        description: "Destruição total de grupos",
+        category: "span",
+        icon: "fas fa-robot"
     },
 
-    // Testes Rede
+    // Phishing - 11 ferramentas
     {
-        name: "Análise Web",
-        description: "Análise de segurança web",
-        category: "testes-rede",
-        icon: "fas fa-globe"
+        name: "menu-phishing.py",
+        description: "Menu completo de ferramentas de phishing",
+        category: "phishing",
+        icon: "fas fa-fish"
     },
     {
-        name: "My Wireshark",
-        description: "Ferramenta de análise de rede",
-        category: "testes-rede",
-        icon: "fas fa-stream"
+        name: "rede-val.py",
+        description: "Validador de redes de phishing",
+        category: "phishing",
+        icon: "fas fa-check-circle"
     },
     {
-        name: "Rede Tool",
-        description: "Utilitários de rede",
-        category: "testes-rede",
-        icon: "fas fa-wifi"
-    },
-
-    // VPN
-    {
-        name: "My VPN",
-        description: "Cliente VPN personalizado",
-        category: "vpn",
-        icon: "fas fa-user-secret"
-    },
-    {
-        name: "Tor",
-        description: "Ferramentas para rede Tor",
-        category: "vpn",
-        icon: "fas fa-onion"
-    },
-    {
-        name: "VPN Tool",
-        description: "Utilitários de VPN",
-        category: "vpn",
-        icon: "fas fa-shield-alt"
-    },
-
-    // Wi-Fi
-    {
-        name: "Man in the Middle",
-        description: "Ataques MITM",
-        category: "wifi",
-        icon: "fas fa-user-friends"
-    },
-    {
-        name: "Clonar Wi-Fi",
-        description: "Clonagem de redes Wi-Fi",
-        category: "wifi",
+        name: "site-clone.py",
+        description: "Clonador de sites para phishing",
+        category: "phishing",
         icon: "fas fa-copy"
     },
     {
-        name: "Wi-Fi Senha",
-        description: "Recuperação de senhas Wi-Fi",
-        category: "wifi",
-        icon: "fas fa-key"
+        name: "info-phishing.py",
+        description: "Ferramenta de phishing com informações",
+        category: "phishing",
+        icon: "fas fa-info-circle"
     },
     {
-        name: "Wi-Fi Tool",
-        description: "Ferramenta geral para Wi-Fi",
-        category: "wifi",
-        icon: "fas fa-wifi"
+        name: "mascara.py",
+        description: "Mascaramento de URLs para phishing",
+        category: "phishing",
+        icon: "fas fa-mask"
+    },
+    {
+        name: "Clickjacking.py",
+        description: "Ataques de Clickjacking",
+        category: "phishing",
+        icon: "fas fa-mouse-pointer"
+    },
+    {
+        name: "phishing-games.py",
+        description: "Phishing pra jogo",
+        category: "phishing",
+        icon: "fas fa-gamepad"
+    },
+    {
+        name: "phishing-social.py",
+        description: "Phishing pra redes sociais",
+        category: "phishing",
+        icon: "fas fa-share-alt"
+    },
+    {
+        name: "phishing-banco.py",
+        description: "Phishing pra banco",
+        category: "phishing",
+        icon: "fas fa-university"
+    },
+    {
+        name: "phisDrive-by-social.py",
+        description: "Página com malware que cria shell",
+        category: "phishing",
+        icon: "fas fa-car-crash"
+    },
+    {
+        name: "phishing-discord.py",
+        description: "Cria página pra roubar token",
+        category: "phishing",
+        icon: "fab fa-discord"
+    },
+    {
+        name: "phishing-apk.py",
+        description: "Cria uma página que recomenda um malware para APK",
+        category: "phishing",
+        icon: "fab fa-android"
     },
 
-    // XSS
+    // XSS - 3 ferramentas
     {
-        name: "XSS Malware",
-        description: "Malware baseado em XSS",
+        name: "xss.py",
+        description: "Ferramenta de ataque XSS",
         category: "xss",
-        icon: "fas fa-biohazard"
+        icon: "fas fa-code"
     },
     {
-        name: "XSS Scan",
+        name: "xss-scan.py",
         description: "Scanner de vulnerabilidades XSS",
         category: "xss",
         icon: "fas fa-search"
     },
     {
-        name: "XSS Tool",
-        description: "Ferramenta geral para XSS",
+        name: "xss-malware.py",
+        description: "XSS com payload de malware",
         category: "xss",
+        icon: "fas fa-biohazard"
+    },
+
+    // Git Exposto - 2 ferramentas
+    {
+        name: "git.py",
+        description: "Scanner de repositórios Git expostos",
+        category: "git-exposto",
+        icon: "fab fa-git-alt"
+    },
+    {
+        name: "baixar-git.py",
+        description: "Baixar Git",
+        category: "git-exposto",
+        icon: "fas fa-download"
+    },
+
+    // DoS - 2 ferramentas
+    {
+        name: "dos.py",
+        description: "Ferramentas de Denial of Service",
+        category: "dos",
+        icon: "fas fa-ban"
+    },
+    {
+        name: "dos-ataque.py",
+        description: "Ataques DoS específicos",
+        category: "dos",
+        icon: "fas fa-exclamation-triangle"
+    },
+
+    // DDoS - 2 ferramentas
+    {
+        name: "ddos.py",
+        description: "Ferramentas de Distributed Denial of Service",
+        category: "ddos",
+        icon: "fas fa-cloud-download-alt"
+    },
+    {
+        name: "ddos-ataque.py",
+        description: "Ataques DDoS específicos",
+        category: "ddos",
+        icon: "fas fa-bolt"
+    },
+
+    // Doxing - 2 ferramentas
+    {
+        name: "dox.py",
+        description: "Ferramentas de coleta de informações pessoais",
+        category: "dox",
+        icon: "fas fa-address-card"
+    },
+    {
+        name: "dox-discord.py",
+        description: "Vai mandar os dados coletados para um canal",
+        category: "dox",
+        icon: "fab fa-discord"
+    },
+
+    // Zero Day - 2 ferramentas
+    {
+        name: "zero-day.py",
+        description: "Exploits de dia zero",
+        category: "zero-day",
+        icon: "fas fa-bug"
+    },
+    {
+        name: "zero-day-scanner.py",
+        description: "Scanner de vulnerabilidades zero-day",
+        category: "zero-day",
+        icon: "fas fa-search"
+    },
+
+    // Testes Rede - 3 ferramentas
+    {
+        name: "rede.py",
+        description: "Ferramentas de teste de rede",
+        category: "testes-rede",
+        icon: "fas fa-wifi"
+    },
+    {
+        name: "my-wireshark.py",
+        description: "Copia do Wireshark",
+        category: "testes-rede",
+        icon: "fas fa-stream"
+    },
+    {
+        name: "analise-web.py",
+        description: "Análise web de rede",
+        category: "testes-rede",
+        icon: "fas fa-globe"
+    },
+
+    // Linux - 1 ferramenta
+    {
+        name: "distro.py",
+        description: "Ferramentas para distribuições Linux",
+        category: "linux",
+        icon: "fab fa-linux"
+    },
+
+    // VPN - 3 ferramentas
+    {
+        name: "vpn.py",
+        description: "Ferramentas de VPN",
+        category: "vpn",
+        icon: "fas fa-user-secret"
+    },
+    {
+        name: "tor.py",
+        description: "Tor para anonimato",
+        category: "vpn",
+        icon: "fas fa-onion"
+    },
+    {
+        name: "my-vpn.py",
+        description: "Minha VPN personalizada",
+        category: "vpn",
+        icon: "fas fa-shield-alt"
+    },
+
+    // Wi-Fi - 4 ferramentas
+    {
+        name: "wi-fi.py",
+        description: "Ferramentas de análise Wi-Fi",
+        category: "wifi",
+        icon: "fas fa-wifi"
+    },
+    {
+        name: "clonar-wi_fi.py",
+        description: "Clonar Wi-Fi",
+        category: "wifi",
+        icon: "fas fa-copy"
+    },
+    {
+        name: "quebrar-senha.py",
+        description: "Quebrar senha de Wi-Fi",
+        category: "wifi",
+        icon: "fas fa-key"
+    },
+    {
+        name: "Man-in-the-Middle.py",
+        description: "Ataques Man-in-the-Middle",
+        category: "wifi",
+        icon: "fas fa-user-friends"
+    },
+
+    // Bluetooth - 2 ferramentas
+    {
+        name: "Bluejacking.py",
+        description: "Ataques de Bluejacking",
+        category: "bluetooth",
+        icon: "fas fa-bluetooth"
+    },
+    {
+        name: "Bluesnarfing.py",
+        description: "Ataques de Bluesnarfing",
+        category: "bluetooth",
+        icon: "fas fa-bluetooth-b"
+    },
+
+    // Extras - 13 ferramentas
+    {
+        name: "atualizações.py",
+        description: "Atualizações do sistema",
+        category: "extras",
+        icon: "fas fa-sync-alt"
+    },
+    {
+        name: "install.py",
+        description: "Instalar dependências",
+        category: "extras",
+        icon: "fas fa-download"
+    },
+    {
+        name: "definir-usuario.py",
+        description: "Definir nome de usuário",
+        category: "extras",
+        icon: "fas fa-user"
+    },
+    {
+        name: "aleatorio.py",
+        description: "Gera números aleatórios",
+        category: "extras",
+        icon: "fas fa-random"
+    },
+    {
+        name: "gerador-senhas.py",
+        description: "Gera senhas fortes",
+        category: "extras",
+        icon: "fas fa-key"
+    },
+    {
+        name: "Conversor-moedas.py",
+        description: "Valor da sua moeda em moedas",
+        category: "extras",
+        icon: "fas fa-money-bill-wave"
+    },
+    {
+        name: "verificador-links.py",
+        description: "Verifica se um link é seguro",
+        category: "extras",
+        icon: "fas fa-shield-alt"
+    },
+    {
+        name: "calculadora.py",
+        description: "Calculadora simples",
+        category: "extras",
+        icon: "fas fa-calculator"
+    },
+    {
+        name: "terminal.py",
+        description: "Terminal interativo do PolyTools",
+        category: "extras",
+        icon: "fas fa-terminal"
+    },
+    {
+        name: "prompet.py",
+        description: "Mudar prompt do terminal",
+        category: "extras",
+        icon: "fas fa-code"
+    },
+    {
+        name: "systema.py",
+        description: "Olhar dados do seu Termux com Termux-API",
+        category: "extras",
+        icon: "fas fa-mobile-alt"
+    },
+    {
+        name: "buscador.py",
+        description: "Buscador de ferramentas",
+        category: "extras",
+        icon: "fas fa-search"
+    },
+    {
+        name: "organizador.py",
+        description: "Organizador de arquivos",
+        category: "extras",
+        icon: "fas fa-folder"
+    },
+    {
+        name: "vsPolystudio.py",
+        description: "VS Code do PolyTools",
+        category: "extras",
         icon: "fas fa-code"
     }
 ];
